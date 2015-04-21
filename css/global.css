@@ -1,0 +1,128 @@
+﻿@charset "utf-8";
+/*CSS reset*/
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,textarea,select,p,span,img,th,td{font:14px/24px  "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif; margin:0; padding:0; vertical-align: baseline; color: #333;}
+html, body {
+    -webkit-user-select: none;   /* 禁止选中文本（如无文本选中需求，此为必选项） */
+    user-select: none;
+}
+/*html5*/
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{ display:block; }
+table { border-collapse:collapse; border-spacing:0; }
+button,input{ cursor:pointer; border: none;background-color: none; }
+/*禁止多行文本框textarea拖拽*/
+textarea {resize: none;}
+img{ vertical-align:middle; display:inline-block; border:none;max-width: 100%;height: auto;}
+a, img {
+    -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+em,i,b { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+li{ vertical-align: middle; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+a,area,button{outline: none;text-decoration:none;transition: all 0.3s;color: #333;}
+.fullpage{padding: 10px;}
+/* ios系统中元素被触摸时产生的半透明灰色遮罩怎么去掉 */
+a,button,input,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0;);-webkit-user-modify:read-write-plaintext-only; }
+
+/*谷歌浏览器支持小于12px的字体*/
+.shrink{-webkit-transform:scale(0.8);-o-transform:scale(1); display:inline-block}
+.f12{ font-size:12px; }
+.f13{ font-size:13px; }
+.f14{ font-size:14px; }
+.f16{ font-size:16px; }
+.f18{ font-size:18px; }
+.f20{ font-size:20px; }
+.f22{ font-size:22px; }
+.f24{ font-size:24px; }
+.fb{ font-weight:bold; }
+.fn{ font-weight:normal; }
+.t2{ text-indent:2em; }
+.hiddenText {text-indent: 100%;white-space: nowrap;overflow: hidden;}
+/*定位*/
+.auto { margin-right: auto; margin-left: auto; }
+.tl{ text-align:left; }
+.tc{ text-align:center; }
+.tr{ text-align: right; }
+.fl{ float:left; }
+.fr{float:right;}
+.vm{ vertical-align: middle; }
+.pr{ position:relative; }
+.pa{ position:absolute; }
+.hidden{ visibility:hidden; }
+.none{ display:none; }
+.block{ display:block; }
+.inlineBlock{ display: inline-block;}
+.centerWrap{position: relative;}
+.centerWrap .center{ position: absolute; left: 0; top: 0; right: 0; bottom:0; margin: auto;} /*高度必须设置*/
+
+/*表单重置*/
+textarea,
+select,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  padding: 10px 5px 10px;
+  height: auto;
+}
+input:active{
+    background: none;
+}
+/* IE10（winphone8）表单元素默认外观重置 */
+select::-ms-expand {display: none;}
+.segmented-control .control-item:active {
+  background-color: none;
+}
+.segmented-control .control-item.active {
+  background-color: none;
+}
+.outer {
+    font-size:0;/* 所有浏览器 */
+    line-height: 1;
+}
+.outer>*{
+    font-size: 14px;
+    display: inline-block;
+}
+
+/*三角样式开始 v2*/
+.triangle{
+    position: relative;
+}
+.triangle:after{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border-width: 10px;
+    border-style: dashed  dashed   solid dashed;
+    border-color:  transparent  transparent #fff  transparent ;
+}
+/*三角样式结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
