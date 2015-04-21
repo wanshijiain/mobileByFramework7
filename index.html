@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>My App</title>
+  <!-- Path to Framework7 Library CSS-->
+  <link rel="stylesheet" href="css/framework7.min.css">
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="css/global.css"></head>
+  <link rel="stylesheet" href="css/my-app.css"></head>
+<body>
+  <!-- Status bar overlay for fullscreen mode-->
+  <div class="statusbar-overlay"></div>
+  <!-- Panels overlay-->
+  <div class="panel-overlay"></div>
+  <!-- Left panel with reveal effect-->
+  <div class="panel panel-left panel-reveal">
+    <div class="content-block">
+      <nav class="nav js_nav">
+        <a href="#" class="link">
+          <img src="images/login.png" alt="">
+          <span class="text">登录</span>
+        </a>
+        <a href="#" class="link">
+          <img src="images/login.png" alt="">
+          <span class="text">注册</span>
+        </a>
+        <a href="#" class="link">
+          <img src="images/login.png" alt="">
+          <span class="text">借款</span>
+        </a>
+        <a href="#" class="link">
+          <img src="images/login.png" alt="">
+          <span class="text">投资</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Views-->
+  <div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" class="link icon-only open-panel">
+              <img src="images/logo.png" height="25" width="35" alt=""></a>
+          </div>
+          <!-- We have home navbar without left link-->
+          <div class="center sliding">利巨人</div>
+          <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+      <div class="pages navbar-through toolbar-through">
+        <!-- Page, data-page contains page name-->
+        <div data-page="index" class="page" >
+          <!-- Scrollable page content-->
+          <div class="page-content">
+            <div class="tabs">
+              <div id="tab1" class="tab active">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="javascript:;">
+                        <img src="images/banner1.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="javascript:;">
+                        <img src="images/banner2.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="javascript:;">
+                        <img src="images/banner3.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="javascript:;">
+                        <img src="images/banner4.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="content_main have_padding">
+                  <div class="home_longin_register">
+                    <a href="login.html" class="home_longin item-link">登录</a>
+                    <a href="regist.html" class="home_register item-link">注册</a>
+                  </div>
+                  <div class="projects-section">
+                    <h2 class="projects-section-title">
+                      <span class="bg_line"></span>
+                      <span class="text">投资项目</span>
+                    </h2>
+                    <div class="projects_section_lists">
+                      <div class="projects_lists_infor outer">
+                        <div class="projects_lists_name">车辆周转贷</div>
+                        <div class="projects_lists_identifier">LJRJK150430</div>
+                      </div>
+                      <div class="projects_lists_type">车融益</div>
+                      <ul class="projects_lists_progress outer">
+                        <div class="progress_bar">
+                          <span class="progress_inner" style="width: 40%"></span>
+                        </div>
+                        <li>
+                          <span class="percent">10%</span>
+                        </li>
+                        <li>
+                          <span class="month">8</span>
+                          个月
+                        </li>
+                        <li>
+                          <span class="total_money">1000</span>
+                          万
+                        </li>
+                      </ul>
+                      <div class="detailed_information">
+                        <a href="javascript:;" class="text">查看详情</a>
+                      </div>
+                    </div>
+                    <div class="projects_section_lists">
+                      <div class="projects_lists_infor outer">
+                        <div class="projects_lists_name">车辆周转贷</div>
+                        <div class="projects_lists_identifier">LJRJK150430</div>
+                      </div>
+                      <div class="projects_lists_type">车融益</div>
+                      <ul class="projects_lists_progress outer">
+                        <div class="progress_bar">
+                          <span class="progress_inner" style="width: 40%"></span>
+                        </div>
+                        <li>
+                          <span class="percent">10%</span>
+                        </li>
+                        <li>
+                          <span class="month">8</span>
+                          个月
+                        </li>
+                        <li>
+                          <span class="total_money">1000</span>
+                          万
+                        </li>
+                      </ul>
+                      <div class="detailed_information">
+                        <a href="javascript:;" class="text">查看详情</a>
+                      </div>
+                    </div>
+                    <div class="projects_section_lists">
+                      <div class="projects_other">
+                        <a href="javascript:;" class="link">查看债权转让</a>
+                        <div class="icon icon-right-nav fr"></div>
+                      </div>
+                    </div>
+                    <div class="projects_section_lists">
+                      <div class="projects_other">
+                        <a href="javascript:;" class="link">查看货币基金</a>
+                        <div class="icon icon-right-nav fr"></div>
+                      </div>
+                    </div>
+                    <div class="projects_section_lists">
+                      <div class="projects_other">
+                        <a href="javascript:;" class="link">查看全部项目</a>
+                        <div class="icon icon-right-nav fr"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div id="tab2" class="tab">2222222</div>
+              <div id="tab3" class="tab">33333333333</div>
+              <div id="tab4" class="tab">444444444444444444</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Toolbar-->
+      <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner">
+          <a href="#tab1" class="tab-link active"> <i class="icon demo-icon-1"></i>
+            <span class="tabbar-label">投资</span>
+          </a>
+          <a href="#tab2" class="tab-link">
+            <i class="icon demo-icon-2"><span class="badge bg-red">5</span></i> 
+            <span class="tabbar-label">投资</span>
+          </a>
+          <a href="#tab3" class="tab-link">
+            <i class="icon demo-icon-3"></i>
+            <span class="tabbar-label">投资</span>
+          </a>
+          <a href="#tab4" class="tab-link">
+            <i class="icon demo-icon-4"></i>
+            <span class="tabbar-label">投资</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Path to Framework7 Library JS-->
+  <script type="text/javascript" src="js/framework7.min.js"></script>
+  <!-- Path to your app js-->
+  <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>
