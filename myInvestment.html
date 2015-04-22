@@ -1,239 +1,166 @@
-<!doctype html>
-<html lang="zh-cn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="format-detection"content="telephone=no, email=no" />
-    <meta name="msapplication-tap-highlight" content="no">
-    <!-- uc强制竖屏 -->
-    <meta name="screen-orientation" content="portrait">
-    <!-- QQ强制竖屏 -->
-    <meta name="x5-orientation" content="portrait">
-    <!-- UC强制全屏 -->
-    <meta name="full-screen" content="yes">
-    <!-- QQ强制全屏 -->
-    <meta name="x5-fullscreen" content="true">
-    <!-- UC应用模式 -->
-    <meta name="browsermode" content="application">
-    <!-- QQ应用模式 -->
-    <meta name="x5-page-mode" content="app">
-    <!-- windows phone 点击无高光 -->
-    <meta name="msapplication-tap-highlight" content="no">
-    <title>Ratchet</title>
-    <link rel="stylesheet" href="css/ratchet.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/app.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/base.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/ratchet.min.js"></script>
-</head>
-<body>
-  <header class="bar bar-nav">
-    
-    <a href="javascript:;" class="pull-left logo">
-      <img src="images/logo.png" height="25" width="35" alt="">
-    </a>
-    <a href="javascript:;" class="icon icon-bars pull-right js_nav_show"></a>
-    <h1 class="title">利巨人</h1>
-    
-  </header>
 
-  <nav class="nav none js_nav">
-      <a href="#" class="link">
-         <img src="images/login.png" alt="">
-         <span class="text">登录</span>
-      </a>
-      <a href="#" class="link">
-         <img src="images/login.png" alt="">
-         <span class="text">注册</span>
-      </a>
-      <a href="#" class="link">
-         <img src="images/login.png" alt="">
-         <span class="text">借款</span>
-      </a>
-      <a href="#" class="link">
-         <img src="images/login.png" alt="">
-         <span class="text">投资</span>
-      </a>
-  </nav>
-  <div class="mask none"></div>
-
-  <footer class="bar bar-tab">
-    <nav class="bar bar-tab">
-      <a class="tab-item active" href="#">
-        <span class="icon icon-home"></span>
-        <span class="tab-label">关于我们</span>
-      </a>
-      <a class="tab-item" href="#">
-        <span class="icon icon-person"></span>
-        <span class="tab-label">借款融资</span>
-      </a>
-      <a class="tab-item" href="#">
-        <span class="icon icon-star-filled"></span>
-        <span class="tab-label">投资理财</span>
-      </a>
-      <a class="tab-item" href="#">
-        <span class="icon icon-search"></span>
-        <span class="tab-label">平台咨询</span>
-      </a>
-    </nav>
-  </footer>
-
-  <div class="content">
-    <div class="content_inner" >
-      <div class="content_main have_padding">
-        <div class="tab projects_tab">
-          <div class="tabMenu projects_tab_menu outer">
-            <div class="tabMenuList projects_menu_list current">
-              回款中
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left sliding"><a href="index.html" class="back link"><i class="icon icon-back"></i><span>返回</span></a></div>
+    <div class="center sliding">我的投资</div>
+    <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+  </div>
+</div>
+<div class="pages navbar-through">
+  <div data-page="myInvestment" class="page">
+    <div class="page-content">
+      <div class="content">
+          <div class="content_inner" >
+            <div class="content_main have_padding">
+              <div class="projects_tab">
+                <div class="projects_tab_menu outer">
+                  <a href="#myInvestmentTab1" class="projects_menu_list tab-link active">
+                    回款中
+                  </a>
+                  <a href="#myInvestmentTab2" class="projects_menu_list tab-link">
+                    投标中
+                  </a>
+                  <a href="#myInvestmentTab3" class="projects_menu_list tab-link">
+                     已完成
+                  </a>
+                </div>
+                <div class="tabs-animated-wrap">
+                  <div class="projects_tab_conten tabs">
+                    <div class="tab projects_conten_list active" id="myInvestmentTab1">
+                      <!-- <div class="projects_section_lists">
+                        <div class="projects_lists_infor outer">
+                          <div class="projects_lists_name">车辆周转贷</div>
+                          <div class="projects_lists_identifier">LJRJK150430</div>
+                        </div>
+                        <div class="projects_lists_type">车融益</div>
+                        <ul class="projects_lists_progress outer">
+                          <div class="progress_bar">
+                              <span class="progress_inner" style="width: 40%"></span>
+                          </div> 
+                          <li><span class="percent">10%</span></li>
+                          <li><span class="month">8</span>个月</li>
+                          <li><span class="total_money">1000</span>万</li>
+                        </ul>
+                        <div class="detailed_information">
+                          <a href="javascript:;" class="text">查看详情</a>
+                        </div>
+                      </div> -->
+                      <div class="projects_lists_infor projects_no_content">
+                        <p class="text">暂无项目</p>
+                        <a href="javascript:;" class="link">立即投资</a>
+                      </div>
+                    </div>
+                    <div class="tab projects_conten_list" id="myInvestmentTab2">
+                      <div class="projects_section_lists">
+                        <div class="projects_lists_infor outer">
+                          <div class="projects_lists_name">车辆周转贷</div>
+                          <div class="projects_lists_identifier">LJRJK150430</div>
+                        </div>
+                        <div class="projects_lists_type">车融益</div>
+                        <ul class="projects_lists_progress outer">
+                          <div class="progress_bar">
+                              <span class="progress_inner" style="width: 40%"></span>
+                          </div> 
+                          <li><span class="percent">10%</span></li>
+                          <li><span class="month">8</span>个月</li>
+                          <li><span class="total_money">1000</span>万</li>
+                        </ul>
+                        <div class="detailed_information">
+                          <a href="javascript:;" class="text">查看详情</a>
+                        </div>
+                      </div>
+                      <div class="projects_section_lists">
+                        <div class="projects_lists_infor outer">
+                          <div class="projects_lists_name">车辆周转贷</div>
+                          <div class="projects_lists_identifier">LJRJK150430</div>
+                        </div>
+                        <div class="projects_lists_type">车融益</div>
+                        <ul class="projects_lists_progress outer">
+                          <div class="progress_bar">
+                              <span class="progress_inner" style="width: 40%"></span>
+                          </div> 
+                          <li><span class="percent">10%</span></li>
+                          <li><span class="month">8</span>个月</li>
+                          <li><span class="total_money">1000</span>万</li>
+                        </ul>
+                        <div class="detailed_information">
+                          <a href="javascript:;" class="text">查看详情</a>
+                        </div>
+                      </div>
+                      <!-- <div class="projects_lists_infor projects_no_content">
+                        <p class="text">暂无项目</p>
+                        <a href="javascript:;" class="link">立即投资</a>
+                      </div> -->
+                    </div>
+                    <div class="tab projects_conten_list" id="myInvestmentTab3">
+                      <div class="projects_section_lists">
+                        <div class="projects_lists_infor outer">
+                          <div class="projects_lists_name">车辆周转贷</div>
+                          <div class="projects_lists_identifier">LJRJK150430</div>
+                        </div>
+                        <div class="projects_lists_type">车融益</div>
+                        <ul class="projects_lists_progress outer">
+                          <div class="progress_bar">
+                              <span class="progress_inner" style="width: 40%"></span>
+                          </div> 
+                          <li><span class="percent">10%</span></li>
+                          <li><span class="month">8</span>个月</li>
+                          <li><span class="total_money">1000</span>万</li>
+                        </ul>
+                        <div class="detailed_information">
+                          <a href="javascript:;" class="text">查看详情</a>
+                        </div>
+                      </div>
+                      <div class="projects_section_lists">
+                        <div class="projects_lists_infor outer">
+                          <div class="projects_lists_name">车辆周转贷</div>
+                          <div class="projects_lists_identifier">LJRJK150430</div>
+                        </div>
+                        <div class="projects_lists_type">车融益</div>
+                        <ul class="projects_lists_progress outer">
+                          <div class="progress_bar">
+                              <span class="progress_inner" style="width: 40%"></span>
+                          </div> 
+                          <li><span class="percent">10%</span></li>
+                          <li><span class="month">8</span>个月</li>
+                          <li><span class="total_money">1000</span>万</li>
+                        </ul>
+                        <div class="detailed_information">
+                          <a href="javascript:;" class="text">查看详情</a>
+                        </div>
+                      </div>
+                      <div class="projects_section_lists">
+                        <div class="projects_lists_infor outer">
+                          <div class="projects_lists_name">车辆周转贷</div>
+                          <div class="projects_lists_identifier">LJRJK150430</div>
+                        </div>
+                        <div class="projects_lists_type">车融益</div>
+                        <ul class="projects_lists_progress outer">
+                          <div class="progress_bar">
+                              <span class="progress_inner" style="width: 40%"></span>
+                          </div> 
+                          <li><span class="percent">10%</span></li>
+                          <li><span class="month">8</span>个月</li>
+                          <li><span class="total_money">1000</span>万</li>
+                        </ul>
+                        <div class="detailed_information">
+                          <a href="javascript:;" class="text">查看详情</a>
+                        </div>
+                      </div>
+                      <!-- <div class="projects_lists_infor projects_no_content">
+                        <p class="text">暂无项目</p>
+                        <a href="javascript:;" class="link">立即投资</a>
+                      </div> -->
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
             </div>
-            <div class="tabMenuList projects_menu_list">
-              投标中
-            </div>
-            <div class="tabMenuList projects_menu_list">
-               已完成
-            </div>
-          </div>
-          <div class="tabContent projects_tab_conten">
-            <div class="tabContentList projects_conten_list">
-              <!-- <div class="projects_section_lists">
-                <div class="projects_lists_infor outer">
-                  <div class="projects_lists_name">车辆周转贷</div>
-                  <div class="projects_lists_identifier">LJRJK150430</div>
-                </div>
-                <div class="projects_lists_type">车融益</div>
-                <ul class="projects_lists_progress outer">
-                  <div class="progress_bar">
-                      <span class="progress_inner" style="width: 40%"></span>
-                  </div> 
-                  <li><span class="percent">10%</span></li>
-                  <li><span class="month">8</span>个月</li>
-                  <li><span class="total_money">1000</span>万</li>
-                </ul>
-                <div class="detailed_information">
-                  <a href="javascript:;" class="text">查看详情</a>
-                </div>
-              </div> -->
-              <div class="projects_lists_infor projects_no_content">
-                <p class="text">暂无项目</p>
-                <a href="javascript:;" class="link">立即投资</a>
-              </div>
-            </div>
-            <div class="tabContentList projects_conten_list">
-              <div class="projects_section_lists">
-                <div class="projects_lists_infor outer">
-                  <div class="projects_lists_name">车辆周转贷</div>
-                  <div class="projects_lists_identifier">LJRJK150430</div>
-                </div>
-                <div class="projects_lists_type">车融益</div>
-                <ul class="projects_lists_progress outer">
-                  <div class="progress_bar">
-                      <span class="progress_inner" style="width: 40%"></span>
-                  </div> 
-                  <li><span class="percent">10%</span></li>
-                  <li><span class="month">8</span>个月</li>
-                  <li><span class="total_money">1000</span>万</li>
-                </ul>
-                <div class="detailed_information">
-                  <a href="javascript:;" class="text">查看详情</a>
-                </div>
-              </div>
-              <div class="projects_section_lists">
-                <div class="projects_lists_infor outer">
-                  <div class="projects_lists_name">车辆周转贷</div>
-                  <div class="projects_lists_identifier">LJRJK150430</div>
-                </div>
-                <div class="projects_lists_type">车融益</div>
-                <ul class="projects_lists_progress outer">
-                  <div class="progress_bar">
-                      <span class="progress_inner" style="width: 40%"></span>
-                  </div> 
-                  <li><span class="percent">10%</span></li>
-                  <li><span class="month">8</span>个月</li>
-                  <li><span class="total_money">1000</span>万</li>
-                </ul>
-                <div class="detailed_information">
-                  <a href="javascript:;" class="text">查看详情</a>
-                </div>
-              </div>
-              <div class="projects_lists_infor projects_no_content">
-                <p class="text">暂无项目</p>
-                <a href="javascript:;" class="link">立即投资</a>
-              </div>
-            </div>
-            <div class="tabContentList projects_conten_list">
-              <div class="projects_section_lists">
-                <div class="projects_lists_infor outer">
-                  <div class="projects_lists_name">车辆周转贷</div>
-                  <div class="projects_lists_identifier">LJRJK150430</div>
-                </div>
-                <div class="projects_lists_type">车融益</div>
-                <ul class="projects_lists_progress outer">
-                  <div class="progress_bar">
-                      <span class="progress_inner" style="width: 40%"></span>
-                  </div> 
-                  <li><span class="percent">10%</span></li>
-                  <li><span class="month">8</span>个月</li>
-                  <li><span class="total_money">1000</span>万</li>
-                </ul>
-                <div class="detailed_information">
-                  <a href="javascript:;" class="text">查看详情</a>
-                </div>
-              </div>
-              <div class="projects_section_lists">
-                <div class="projects_lists_infor outer">
-                  <div class="projects_lists_name">车辆周转贷</div>
-                  <div class="projects_lists_identifier">LJRJK150430</div>
-                </div>
-                <div class="projects_lists_type">车融益</div>
-                <ul class="projects_lists_progress outer">
-                  <div class="progress_bar">
-                      <span class="progress_inner" style="width: 40%"></span>
-                  </div> 
-                  <li><span class="percent">10%</span></li>
-                  <li><span class="month">8</span>个月</li>
-                  <li><span class="total_money">1000</span>万</li>
-                </ul>
-                <div class="detailed_information">
-                  <a href="javascript:;" class="text">查看详情</a>
-                </div>
-              </div>
-              <div class="projects_section_lists">
-                <div class="projects_lists_infor outer">
-                  <div class="projects_lists_name">车辆周转贷</div>
-                  <div class="projects_lists_identifier">LJRJK150430</div>
-                </div>
-                <div class="projects_lists_type">车融益</div>
-                <ul class="projects_lists_progress outer">
-                  <div class="progress_bar">
-                      <span class="progress_inner" style="width: 40%"></span>
-                  </div> 
-                  <li><span class="percent">10%</span></li>
-                  <li><span class="month">8</span>个月</li>
-                  <li><span class="total_money">1000</span>万</li>
-                </ul>
-                <div class="detailed_information">
-                  <a href="javascript:;" class="text">查看详情</a>
-                </div>
-              </div>
-              <div class="projects_lists_infor projects_no_content">
-                <p class="text">暂无项目</p>
-                <a href="javascript:;" class="link">立即投资</a>
-              </div>
-            </div>
-            
           </div>
         </div>
-        <script>
-          $(function(){
-            $('.tab').tab();
-          })
-        </script>
       </div>
     </div>
   </div>
-</body>
-</html>
+</div>

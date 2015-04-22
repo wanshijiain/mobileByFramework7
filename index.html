@@ -2,15 +2,19 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection"content="telephone=no, email=no" />
+  <meta name="msapplication-tap-highlight" content="no">
+
   <title>利巨人</title>
   <!-- Path to Framework7 Library CSS-->
   <link rel="stylesheet" href="css/framework7.min.css">
   <!-- Path to your custom app styles-->
-  <link rel="stylesheet" href="css/global.css"></head>
-  <link rel="stylesheet" href="css/my-app.css"></head>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/app.css">
+  </head>
 <body>
   <!-- Status bar overlay for fullscreen mode-->
   <div class="statusbar-overlay"></div>
@@ -19,12 +23,12 @@
   <!-- Left panel with reveal effect-->
   <div class="panel panel-left panel-reveal">
     <div class="content-block">
-      <nav class="nav js_nav">
-        <a href="#" class="link">
+      <nav class="nav">
+        <a href="login.html" class="link">
           <img src="images/login.png" alt="">
           <span class="text">登录</span>
         </a>
-        <a href="#" class="link">
+        <a href="regist.html" class="link">
           <img src="images/login.png" alt="">
           <span class="text">注册</span>
         </a>
@@ -40,11 +44,10 @@
     </div>
   </div>
 
-  <!-- Views-->
-  <div class="views">
-    <!-- Your main view, should have "view-main" class-->
-    <div class="view view-main">
-      <!-- Top Navbar-->
+  <!-- 现在容器是"views" -->
+  <div class="views tabs">
+    <!-- 投资理财 -->
+    <div id="tab1" class="view tab active view-main">
       <div class="navbar">
         <div class="navbar-inner">
           <div class="left">
@@ -53,7 +56,7 @@
               <img src="images/logo.png" height="25" width="35" alt=""></a>
           </div>
           <!-- We have home navbar without left link-->
-          <div class="center sliding">利巨人</div>
+          <div class="center sliding">投资理财</div>
           <div class="right">
             <!-- Right link contains only icon - additional "icon-only" class-->
             <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i>
@@ -61,14 +64,11 @@
           </div>
         </div>
       </div>
-      <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
-      <div class="pages navbar-through toolbar-through">
-        <!-- Page, data-page contains page name-->
-        <div data-page="index" class="page" >
-          <!-- Scrollable page content-->
+      <div class="pages  navbar-through toolbar-through">
+        <div data-page="index" class="page">
           <div class="page-content">
-            <div class="tabs">
-              <div id="tab1" class="tab active">
+            
+              
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -91,9 +91,11 @@
                   <div class="swiper-pagination"></div>
                 </div>
                 <div class="content_main have_padding">
-                  <div class="home_longin_register">
-                    <a href="login.html" class="home_longin item-link">登录</a>
-                    <a href="regist.html" class="home_register item-link">注册</a>
+                  <div class="home_longin_register home_button_section">
+                    <!-- <a href="login.html" class="home_longin item-link">登录</a>
+                    <a href="regist.html" class="home_register item-link">注册</a> -->
+                    <a href="accountCenter.html" class="home_register item-link">我的账户</a>
+                    <a href="regist.html" class="home_register item-link">下载客户端</a>
                   </div>
                   <div class="projects-section">
                     <h2 class="projects-section-title">
@@ -154,57 +156,152 @@
                     </div>
                     <div class="projects_section_lists">
                       <div class="projects_other">
-                        <a href="javascript:;" class="link">查看债权转让</a>
-                        <div class="icon icon-right-nav fr"></div>
+                        <a href="projectDetails.html" class="link">查看债权转让</a>
+                        <div class="icon">&gt;</div>
                       </div>
                     </div>
                     <div class="projects_section_lists">
                       <div class="projects_other">
-                        <a href="javascript:;" class="link">查看货币基金</a>
-                        <div class="icon icon-right-nav fr"></div>
+                        <a href="projectDetails.html" class="link">查看货币基金</a>
+                        <div class="icon">&gt;</div>
                       </div>
                     </div>
                     <div class="projects_section_lists">
                       <div class="projects_other">
                         <a href="projectLists.html" class="link">查看全部项目</a>
-                        <div class="icon icon-right-nav fr"></div>
+                        <div class="icon">&gt;</div>
+                      </div>
+                    </div>
+                    <div class="projects_section_lists">
+                      <div class="projects_other">
+                        <a href="##" class="link">优惠劵</a>
+                        <div class="icon">&gt;</div>
                       </div>
                     </div>
 
                   </div>
                 </div>
-              </div>
-              <div id="tab2" class="tab">2222222</div>
-              <div id="tab3" class="tab">33333333333</div>
-              <div id="tab4" class="tab">444444444444444444</div>
-            </div>
+              
+              
+            
 
           </div>
         </div>
       </div>
-      <!-- Bottom Toolbar-->
-      <div class="toolbar tabbar tabbar-labels">
-        <div class="toolbar-inner">
-          <a href="#tab1" class="tab-link active"> <i class="icon demo-icon-1"></i>
-            <span class="tabbar-label">关于我们</span>
-          </a>
-          <a href="#tab2" class="tab-link">
-            <i class="icon demo-icon-2"><span class="badge bg-red">5</span></i> 
-            <span class="tabbar-label">借款融资</span>
-          </a>
-          <a href="#tab3" class="tab-link">
-            <i class="icon demo-icon-3"></i>
-            <span class="tabbar-label">投资理财</span>
-          </a>
-          <a href="#tab4" class="tab-link">
-            <i class="icon demo-icon-4"></i>
-            <span class="tabbar-label">平台咨询</span>
-          </a>
+      
+    </div>
+    
+    <!-- 借款融资-->
+    <div id="tab2" class="view tab">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" class="link icon-only open-panel">
+              <img src="images/logo.png" height="25" width="35" alt=""></a>
+          </div>
+          <!-- We have home navbar without left link-->
+          <div class="center sliding">借款融资</div>
+          <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pages navbar-fixed">
+        <div data-page="home-2" class="page">
+          <div class="page-content">
+            <div class="content-block">
+              <p>This is view 2</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    
+    <!-- 平台咨询 -->
+    <div id="tab3" class="view tab">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" class="link icon-only open-panel">
+              <img src="images/logo.png" height="25" width="35" alt=""></a>
+          </div>
+          <!-- We have home navbar without left link-->
+          <div class="center sliding">平台咨询</div>
+          <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pages navbar-fixed">
+        <div data-page="home-4" class="page">
+          <div class="page-content">
+            <div class="content-block">
+              <p>This is view 4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 关于我们 -->
+    <div id="tab4" class="view tab ">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" class="link icon-only open-panel">
+              <img src="images/logo.png" height="25" width="35" alt=""></a>
+          </div>
+          <!-- We have home navbar without left link-->
+          <div class="center sliding">关于我们</div>
+          <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pages navbar-fixed">
+        <div data-page="home-3" class="page">
+          <div class="page-content">
+            <div class="content-block">
+              <p>This is view4</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      
+    </div>
+    <!-- 底部切换导航 -->
+    <div class="toolbar tabbar">
+      <div class="toolbar-inner">
+        <a href="#tab1" class="tab-link active">
+          <i class="icon demo-icon-3"></i>
+          <span class="tabbar-label">投资理财</span>
+        </a>
+        <a href="#tab2" class="tab-link">
+          <i class="icon demo-icon-2"></i>
+          <span class="tabbar-label">借款融资</span>
+        </a>
+        <a href="#tab3" class="tab-link">
+          <i class="icon demo-icon-3"></i>
+          <span class="tabbar-label">平台咨询</span>
+        </a>
+        <a href="#tab4" class="tab-link ">
+          <i class="icon demo-icon-1"></i>
+          <span class="tabbar-label">关于我们</span>
+        </a>
+      </div>
+    </div>
   </div>
+  
   <!-- Path to Framework7 Library JS-->
   <script type="text/javascript" src="js/framework7.min.js"></script>
   <!-- Path to your app js-->

@@ -18,10 +18,11 @@ var mainView = myApp.addView('.view-main', {
     loop: true
   }); 
 
-var tab=$('.tab');
+/*var tab=$('.tab');
 tab.find('.tabMenu .tabMenuList').click(function(){
-    var index $(this).
-})
+    var index=$(this);
+    $('.tabContent .tabContentList').eq(index).show().siblings().hide();
+})*/
 
 
 

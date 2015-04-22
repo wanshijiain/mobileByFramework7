@@ -54,7 +54,6 @@ a,button,input,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0;);-webkit-user
 .inlineBlock{ display: inline-block;}
 .centerWrap{position: relative;}
 .centerWrap .center{ position: absolute; left: 0; top: 0; right: 0; bottom:0; margin: auto;} /*高度必须设置*/
-
 /*表单重置*/
 textarea,
 select,
@@ -72,8 +71,16 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
+  width: 100%;
   padding: 10px 5px 10px;
   height: auto;
+  outline: none;
+  -webkit-appearance: none;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  width: 100%;
 }
 input:active{
     background: none;
