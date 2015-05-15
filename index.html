@@ -7,13 +7,15 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection"content="telephone=no, email=no" />
   <meta name="msapplication-tap-highlight" content="no">
-
+  <meta name="x5-orientation" content="portrait">
+  <meta name="x5-fullscreen" content="true">
   <title>利巨人</title>
   <!-- Path to Framework7 Library CSS-->
   <link rel="stylesheet" href="css/framework7.min.css">
   <!-- Path to your custom app styles-->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/app.css">
+  
   </head>
 <body>
   <!-- Status bar overlay for fullscreen mode-->
@@ -22,37 +24,69 @@
   <div class="panel-overlay"></div>
   <!-- Left panel with reveal effect-->
   <div class="panel panel-left panel-reveal">
-    <div class="content-block">
-      <nav class="nav">
-        <a href="login.html" class="link">
-          <img src="images/login.png" alt="">
-          <span class="text">登录</span>
-        </a>
-        <a href="regist.html" class="link">
-          <img src="images/login.png" alt="">
-          <span class="text">注册</span>
-        </a>
-        <a href="#" class="link">
-          <img src="images/login.png" alt="">
-          <span class="text">借款</span>
-        </a>
-        <a href="#" class="link">
-          <img src="images/login.png" alt="">
-          <span class="text">投资</span>
-        </a>
-      </nav>
+    <div class="content-block inset">
+      
+          <div class="list-block media-list inset">
+            <ul>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="..." width="44"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">注册</div>
+                    </div>
+                    <div class="item-subtitle">注册注册注册</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="..." width="44"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">借款</div>
+                    </div>
+                    <div class="item-subtitle">借款借款借款</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="..." width="44"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">借款</div>
+                    </div>
+                    <div class="item-subtitle">借款借款借款</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="..." width="44"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">投资</div>
+                    </div>
+                    <div class="item-subtitle">投资投资投资投资</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
     </div>
   </div>
 
   <!-- 现在容器是"views" -->
   <div class="views tabs">
+    
     <!-- 投资理财 -->
     <div id="tab1" class="view tab active view-main">
       <div class="navbar">
         <div class="navbar-inner">
           <div class="left">
             <!-- Right link contains only icon - additional "icon-only" class-->
-            <a href="#" class="link icon-only open-panel">
+            <a href="#" class="link icon-only">
               <img src="images/logo.png" height="25" width="35" alt=""></a>
           </div>
           <!-- We have home navbar without left link-->
@@ -67,120 +101,126 @@
       <div class="pages  navbar-through toolbar-through">
         <div data-page="index" class="page">
           <div class="page-content">
-            
-              
-                <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <a href="javascript:;">
-                        <img src="images/banner1.jpg" alt=""></a>
+                <div class="content">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="javascript:;">
+                          <img src="images/banner1.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="javascript:;">
+                          <img src="images/banner2.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="javascript:;">
+                          <img src="images/banner3.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="javascript:;">
+                          <img src="images/banner4.jpg" alt="">
+                        </a>
+                      </div>
                     </div>
-                    <div class="swiper-slide">
-                      <a href="javascript:;">
-                        <img src="images/banner2.jpg" alt=""></a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="javascript:;">
-                        <img src="images/banner3.jpg" alt=""></a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="javascript:;">
-                        <img src="images/banner4.jpg" alt=""></a>
-                    </div>
+                    <div class="swiper-pagination"></div>
                   </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="content_main have_padding">
-                  <div class="home_longin_register home_button_section">
-                    <!-- <a href="login.html" class="home_longin item-link">登录</a>
-                    <a href="regist.html" class="home_register item-link">注册</a> -->
-                    <a href="accountCenter.html" class="home_register item-link">我的账户</a>
-                    <a href="regist.html" class="home_register item-link">下载客户端</a>
-                  </div>
-                  <div class="projects-section">
-                    <h2 class="projects-section-title">
-                      <span class="bg_line"></span>
-                      <span class="text">投资项目</span>
-                    </h2>
-                    <div class="projects_section_lists">
-                      <div class="projects_lists_infor outer">
-                        <div class="projects_lists_name">车辆周转贷</div>
-                        <div class="projects_lists_identifier">LJRJK150430</div>
-                      </div>
-                      <div class="projects_lists_type">车融益</div>
-                      <ul class="projects_lists_progress outer">
-                        <div class="progress_bar">
-                          <span class="progress_inner" style="width: 40%"></span>
+                  <div class="content_main have_padding">
+                    <div class="home_longin_register home_button_section">
+                      <a href="login.html" class="home_longin item-link">登录</a>
+                      <a href="regist.html" class="home_register item-link">注册</a>
+                      <!-- <a href="accountCenter.html" class="home_register item-link">我的账户</a>
+                      <a href="regist.html" class="home_register item-link">下载客户端</a> -->
+                    </div>
+                    <div class="projects-section">
+                      <h2 class="projects-section-title">
+                        <span class="bg_line"></span>
+                        <span class="text">投资项目</span>
+                      </h2>
+                      <div class="projects_section_lists">
+                        <div class="projects_lists_infor ">
+                          <div class="projects_lists_name">邓先生奥迪A8汽车质押借款</div>
+                          <div class="projects_lists_identifier">LJRJK1503024</div>
                         </div>
-                        <li>
-                          <span class="percent">10%</span>
-                        </li>
-                        <li>
-                          <span class="month">8</span>
-                          个月
-                        </li>
-                        <li>
-                          <span class="total_money">1000</span>
-                          万
-                        </li>
-                      </ul>
-                      <div class="detailed_information">
-                        <a href="projectDetails.html" class="text">查看详情</a>
-                      </div>
-                    </div>
-                    <div class="projects_section_lists">
-                      <div class="projects_lists_infor outer">
-                        <div class="projects_lists_name">车辆周转贷</div>
-                        <div class="projects_lists_identifier">LJRJK150430</div>
-                      </div>
-                      <div class="projects_lists_type">车融益</div>
-                      <ul class="projects_lists_progress outer">
-                        <div class="progress_bar">
-                          <span class="progress_inner" style="width: 40%"></span>
+                        <div class="projects_lists_type">车融益</div>
+                        <ul class="projects_lists_progress outer">
+                          <div class="progress_bar">
+                            <span class="progress_inner" style="width: 68%"></span>
+                          </div>
+                          <li>
+                            <span class="percent">16.20%</span>
+                          </li>
+                          <li>
+                            <span class="month">2</span>
+                            个月
+                          </li>
+                          <li>
+                            <span class="total_money">250,000.00</span>
+                            万
+                          </li>
+                        </ul>
+                        <div class="detailed_information">
+                          <a href="projectDetails.html" class="text">查看详情</a>
                         </div>
-                        <li>
-                          <span class="percent">10%</span>
-                        </li>
-                        <li>
-                          <span class="month">8</span>
-                          个月
-                        </li>
-                        <li>
-                          <span class="total_money">1000</span>
-                          万
-                        </li>
-                      </ul>
-                      <div class="detailed_information">
-                        <a href="projectDetails.html" class="text">查看详情</a>
                       </div>
-                    </div>
-                    <div class="projects_section_lists">
-                      <div class="projects_other">
-                        <a href="projectDetails.html" class="link">查看债权转让</a>
-                        <div class="icon">&gt;</div>
+                      <div class="projects_section_lists">
+                        <div class="projects_lists_infor ">
+                          <div class="projects_lists_name">袁女士国嘉华庭商品房抵押借款</div>
+                          <div class="projects_lists_identifier">LJRJK1504034</div>
+                        </div>
+                        <div class="projects_lists_type">房融益</div>
+                        <ul class="projects_lists_progress outer">
+                          <div class="progress_bar">
+                            <span class="progress_inner" style="width: 20%"></span>
+                          </div>
+                          <li>
+                            <span class="percent">12.00%</span>
+                          </li>
+                          <li>
+                            <span class="month">1</span>
+                            个月
+                          </li>
+                          <li>
+                            <span class="total_money">700,000.00</span>
+                            万
+                          </li>
+                        </ul>
+                        <div class="detailed_information">
+                          <a href="projectDetails.html" class="text">查看详情</a>
+                        </div>
                       </div>
-                    </div>
-                    <div class="projects_section_lists">
-                      <div class="projects_other">
-                        <a href="projectDetails.html" class="link">查看货币基金</a>
-                        <div class="icon">&gt;</div>
+                      <div class="projects_section_lists">
+                        <div class="projects_other">
+                          <a href="projectDetails.html" class="link">查看债权转让</a>
+                          <div class="icon">&gt;</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="projects_section_lists">
-                      <div class="projects_other">
-                        <a href="projectLists.html" class="link">查看全部项目</a>
-                        <div class="icon">&gt;</div>
+                      <div class="projects_section_lists">
+                        <div class="projects_other">
+                          <a href="projectDetails.html" class="link">查看货币基金</a>
+                          <div class="icon">&gt;</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="projects_section_lists">
-                      <div class="projects_other">
-                        <a href="##" class="link">优惠劵</a>
-                        <div class="icon">&gt;</div>
+                      <div class="projects_section_lists">
+                        <div class="projects_other">
+                          <a href="projectLists.html" class="link">查看全部项目</a>
+                          <div class="icon">&gt;</div>
+                        </div>
                       </div>
-                    </div>
+                      <div class="projects_section_lists">
+                        <div class="projects_other">
+                          <a href="##" class="link">优惠劵</a>
+                          <div class="icon">&gt;</div>
+                        </div>
+                      </div>
 
+                    </div>
                   </div>
                 </div>
+                
+                
               
               
             
@@ -282,8 +322,9 @@
     <!-- 底部切换导航 -->
     <div class="toolbar tabbar">
       <div class="toolbar-inner">
+        
         <a href="#tab1" class="tab-link active">
-          <i class="icon demo-icon-3"></i>
+          <i class="icon demo-icon-1"></i>
           <span class="tabbar-label">投资理财</span>
         </a>
         <a href="#tab2" class="tab-link">
@@ -292,16 +333,17 @@
         </a>
         <a href="#tab3" class="tab-link">
           <i class="icon demo-icon-3"></i>
-          <span class="tabbar-label">平台咨询</span>
+          <span class="tabbar-label">平台资讯</span>
         </a>
         <a href="#tab4" class="tab-link ">
-          <i class="icon demo-icon-1"></i>
+          <i class="icon demo-icon-4"></i>
           <span class="tabbar-label">关于我们</span>
         </a>
       </div>
     </div>
   </div>
-  
+  <!-- <script src="http://localhost:8081/target/target-script-min.js#anonymous"></script> -->
+  <!-- <script src="http://debug.build.phonegap.com/target/target-script-min.js#anonymous"></script> -->
   <!-- Path to Framework7 Library JS-->
   <script type="text/javascript" src="js/framework7.min.js"></script>
   <!-- Path to your app js-->
